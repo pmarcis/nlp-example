@@ -18,7 +18,7 @@
                         <h1>CoNLL-U format parse tree visualization</h1>
                     </header>
                     <article class="entry-content">
-                        <h3>Latvian UDPipe output</h3>
+                        <h3>Output of the Latvian UDPipe Parser</h3>
                         <div class="conllu-parse" tabs="yes">
 1	lai	lai	PART	qs	_	2	mark	_	_
 2	pārvaldītu	pārvaldīt	VERB	vmnc0t300an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -43,33 +43,66 @@
 3	aizkustinošs	aizkustinošs	ADJ	afmsnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
 4	vīrs	vīrs	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	zs	_	4	punct	_	_
-                        </div>
-                        <h3>English UDPipe output</h3>
+</div>
+
+                        <h3>Output of the Latvian Tagger of Tilde</h3>
+<div>For comparison of the tagging (not parsing) quality, I included here also results of the Latvian morpho-syntactic tagger from Tilde (the descriptions are in Latvian though). In the first sentence, the Tilde tagger  handles the subordinating conjunction better. In the second sentence, the adjective (first word) and the participle (fifth word) are handled better. The last sentence is handled correctly by both tools. Note that this is just an illustrative comparison to show that the tagging performance usually differs between different tools!</div>
                         <div class="conllu-parse" tabs="yes">
-1	To	_	TO	TO	_	2	mark	_	_
-2	control	_	VB	VB	_	0	root	_	_
-3	system	_	NN	NN	_	4	compound	_	_
-4	parameters	_	NNS	NNS	_	2	dobj	_	_
-6	open	_	JJ	JJ	_	7	amod	_	_
-7	Settings	_	NNS	NNS	_	4	appos	_	_
+1	Lai	lai	SCONJ	saiklis	_	0	_	_	_
+2	pārvaldītu	pārvaldīt	VERB	darb.v.,vēlēj.izt.,tag.	_	0	_	_	_
+3	sistēmas	sistēma	NOUN	lietv.,siev.dz.,vsk.,ģen.,	_	0	_	_	_
+4	parametrus	parametrs	NOUN	lietv.,vīr.dz.,dsk.,akuz.,	_	0	_	_	_
+5	,	,	PUNCT	pieturz.	_	0	_	_	_
+6	atveriet	atvērt	VERB	darb.v.,pav.izt.,2.pers.,dsk.	_	0	_	_	_
+7	Settings	Settings	X	nezināms_v.	_	0	_	_	_
+8	.	.	PUNCT	pieturz.	_	0	_	_	_
 
-1	Dry	_	NNP	NNP	_	2	compound	_	_
-2	clothes	_	NNS	NNS	_	5	nsubjpass	_	_
-3	can	_	MD	MD	_	5	aux	_	_
-4	be	_	VB	VB	_	5	auxpass	_	_
-5	taken	_	VBN	VBN	_	0	root	_	_
-6	out	_	IN	IN	_	9	case	_	_
-7	of	_	IN	IN	_	9	case	_	_
-8	the	_	DT	DT	_	9	det	_	_
-9	drier	_	NN	NN	_	5	nmod	_	_
+1	Sausas	sauss	ADJ	īpaš.v.,siev.dz.,dsk.,nom.,pamata_pak.,nenot.gal.	_	0	_	_	_
+2	drēbes	drēbe	NOUN	lietv.,siev.dz.,dsk.,nom.,	_	0	_	_	_
+3	var	varēt	VERB	darb.v.,īst.izt.,tag.,3.pers.	_	0	_	_	_
+4	tikt	tikt	VERB	darb.v.,nenot.	_	0	_	_	_
+5	izņemtas	izņemts	ADJ	divd.,ciešamā_kārta,pag.,siev.dz.,dsk.,nom.,pamata_pak.,nenot.gal.	_	0	_	_	_
+6	no	no	ADP	priev.,prasīts_vārds_vsk.,prasīts_vārds_ģen.,priev.pirms_vārda	_	0	_	_	_
+7	žāvētāja	žāvētājs	NOUN	lietv.,vīr.dz.,vsk.,ģen.,	_	0	_	_	_
+8	.	.	PUNCT	pieturz.	_	0	_	_	_
 
-1	He	_	PRP	PRP	_	5	nsubj	_	_
-2	is	_	VBZ	VBZ	_	5	cop	_	_
-3	a	_	DT	DT	_	5	det	_	_
-4	moving	_	VBG	VBG	_	5	amod	_	_
-5	man	_	NN	NN	_	0	root	_	_
-                        </div>
-                        <h3>English Stanford dependency parser output</h3>
+1	Viņš	viņš	PRON	vietn.-v.,3.pers.,vīr.dz.,vsk.,nom.,veids:personu	_	0	_	_	_
+2	ir	būt	VERB	darb.v.,īst.izt.,tag.,3.pers.	_	0	_	_	_
+3	aizkustinošs	aizkustinošs	ADJ	divd.,darāmā_kārta,tag.,vīr.dz.,vsk.,nom.,pamata_pak.,nenot.gal.	_	0	_	_	_
+4	vīrs	vīrs	NOUN	lietv.,vīr.dz.,vsk.,nom.,	_	0	_	_	_
+5	.	.	PUNCT	pieturz.	_	0	_	_	_
+</div>
+
+                        <h3>Output of the English UDPipe Parser</h3>
+                        <div class="conllu-parse" tabs="yes">
+1	to	to	PART	TO	_	2	mark	_	_
+2	control	control	VERB	VB	VerbForm=Inf	4	amod	_	_
+3	system	system	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+4	parameters	parameter	NOUN	NNS	Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	open	open	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	Settings	Setting	NOUN	NNS	Number=Plur	4	conj	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	4	punct	_	_
+
+1	dry	dry	DET	DT	_	2	det	_	_
+2	clothes	clothes	NOUN	NNS	Number=Plur	5	nsubj:pass	_	_
+3	can	can	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	be	be	AUX	VB	VerbForm=Inf	5	aux:pass	_	_
+5	taken	take	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	out	out	ADP	RP	_	9	case	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	drier	drier	NOUN	NN	Number=Sing	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	.	_	5	punct	_	_
+
+1	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+4	moving	moving	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	man	man	NOUN	NN	Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	5	punct	_	_
+</div>
+                        <h3>Output of the English Stanford Parser (<i>model: English Factored</i>)</h3>
                         <div class="conllu-parse" tabs="yes">
 1	To	_	TO	TO	_	2	mark	_	_
 2	control	_	VB	VB	_	0	root	_	_
@@ -93,7 +126,7 @@
 3	a	_	DT	DT	_	5	det	_	_
 4	moving	_	VBG	VBG	_	5	amod	_	_
 5	man	_	NN	NN	_	0	root	_	_
-                        </div>
+</div>
                         <div>
                              The examples are visualized using <a href="https://github.com/spyysalo/annodoc">Annodoc</a> (annotation documentation support system), <a href="http://spyysalo.github.io/conllu.js/">conllu.js</a> (CoNLL-U format library for JavaScript) that use <a href="https://github.com/nlplab/brat">brat</a> (brat rapid annotation tool), .
                         </div>

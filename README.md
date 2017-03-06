@@ -13,9 +13,9 @@ This is an example of how to:
 
 The tools have been tested only on Linux (Ubuntu 16.04) and the installation script is meant only for Linux. That being said, this is what you need to do:
 
-1) You know the drill: `git clone https://github.com/pmarcis/nlp-example.git` and `cd nlp-example`.
-2) Next, for UDPipe execute the `set-up-udpipe.sh` script. You may want to go through it though before you do this! The script will (hopefully) install all required dependencies, download relevant data and train UDPipe models for English and Latvian. The script will also install dependencies for the syntactically parsed data visualisation. For more details, see the [script](set-up-udpipe.sh)! The script may take an hour (more or less) to complete.
-3) Next, for NLTK execute the `set-up-nltk-with-stanford-tools.sh` script. You may want to go through it though before you do this! The script will (hopefully) install all required python dependencies and download the Stanford Tagger and Stanford Parser. For more details, see the [script](set-up-nltk-with-stanford-tools.sh)!
+* You know the drill: `git clone https://github.com/pmarcis/nlp-example.git` and `cd nlp-example`.
+* Next, for UDPipe execute the `set-up-udpipe.sh` script. You may want to go through it though before you do this! The script will (hopefully) install all required dependencies, download relevant data and train UDPipe models for English and Latvian. The script will also install dependencies for the syntactically parsed data visualisation. For more details, see the [script](set-up-udpipe.sh)! The script may take an hour (more or less) to complete.
+* Next, for NLTK execute the `set-up-nltk-with-stanford-tools.sh` script. You may want to go through it though before you do this! The script will (hopefully) install all required python dependencies and download the Stanford Tagger and Stanford Parser. For more details, see the [script](set-up-nltk-with-stanford-tools.sh)!
 
 # Usage
 
