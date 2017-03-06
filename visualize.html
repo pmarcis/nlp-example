@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CoNLL-U format parse tree visualization</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="CoNLL-U format parse tree visualization">
+        <link rel="stylesheet" href="dependencies/annodoc/css/jquery-ui-redmond.css">
+        <link rel="stylesheet" href="dependencies/annodoc/css/main.css">
+        <link rel="stylesheet" href="dependencies/annodoc/css/style-vis.css">
+        <script type="text/javascript" src="dependencies/annodoc/lib/ext/head.load.min.js"></script>
+    </head>
+    <body>
+        <div class="page-content">
+            <div class="wrap">
+                <div class="entry">
+                    <header class="entry-header">
+                        <h1>CoNLL-U format parse tree visualization</h1>
+                    </header>
+                    <article class="entry-content">
+                        <h3>Latvian UDPipe output</h3>
+                        <div class="conllu-parse" tabs="yes">
+1	lai	lai	PART	qs	_	2	mark	_	_
+2	pārvaldītu	pārvaldīt	VERB	vmnc0t300an	Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sistēmas	sistēma	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+4	parametrus	parametrs	NOUN	ncmpa1	Case=Acc|Gender=Masc|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	zc	_	6	punct	_	_
+6	atveriet	atveriet	VERB	vmnist32pay	Evident=Fh,Nfh|Mood=Ind|Number=Plur|Person=2|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	Settings	Settings	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	zs	_	2	punct	_	_
+
+1	sausas	sausa	NOUN	ncfsg4	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
+2	drēbes	drēbe	NOUN	ncfsg5	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
+3	var	varēt	VERB	vonipt330an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tikt	tikt	VERB	vmnn0t2000n	Polarity=Pos|VerbForm=Inf	3	xcomp	_	_
+5	izņemtas	izņemta	NOUN	ncfpn4	Case=Nom|Gender=Fem|Number=Plur	4	obj	_	_
+6	no	no	ADP	spsgy	_	7	case	_	_
+7	žāvētāja	žāvētājs	NOUN	ncmsg1	Case=Gen|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	zs	_	3	punct	_	_
+
+1	viņš	viņš	PRON	pp3msnn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	ir	būt	VERB	vcnipii30an	Evident=Fh,Nfh|Mood=Ind|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	aizkustinošs	aizkustinošs	ADJ	afmsnnp	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	vīrs	vīrs	NOUN	ncmsn1	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	zs	_	4	punct	_	_
+                        </div>
+                        <h3>English UDPipe output</h3>
+                        <div class="conllu-parse" tabs="yes">
+1	To	_	TO	TO	_	2	mark	_	_
+2	control	_	VB	VB	_	0	root	_	_
+3	system	_	NN	NN	_	4	compound	_	_
+4	parameters	_	NNS	NNS	_	2	dobj	_	_
+6	open	_	JJ	JJ	_	7	amod	_	_
+7	Settings	_	NNS	NNS	_	4	appos	_	_
+
+1	Dry	_	NNP	NNP	_	2	compound	_	_
+2	clothes	_	NNS	NNS	_	5	nsubjpass	_	_
+3	can	_	MD	MD	_	5	aux	_	_
+4	be	_	VB	VB	_	5	auxpass	_	_
+5	taken	_	VBN	VBN	_	0	root	_	_
+6	out	_	IN	IN	_	9	case	_	_
+7	of	_	IN	IN	_	9	case	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	drier	_	NN	NN	_	5	nmod	_	_
+
+1	He	_	PRP	PRP	_	5	nsubj	_	_
+2	is	_	VBZ	VBZ	_	5	cop	_	_
+3	a	_	DT	DT	_	5	det	_	_
+4	moving	_	VBG	VBG	_	5	amod	_	_
+5	man	_	NN	NN	_	0	root	_	_
+                        </div>
+                        <h3>English Stanford dependency parser output</h3>
+                        <div class="conllu-parse" tabs="yes">
+1	To	_	TO	TO	_	2	mark	_	_
+2	control	_	VB	VB	_	0	root	_	_
+3	system	_	NN	NN	_	7	compound	_	_
+4	parameters	_	NNS	NNS	_	7	compound	_	_
+6	open	_	JJ	JJ	_	7	amod	_	_
+7	Settings	_	NNS	NNS	_	2	dobj	_	_
+
+1	Dry	_	NNP	NNP	_	2	compound	_	_
+2	clothes	_	NNS	NNS	_	5	nsubjpass	_	_
+3	can	_	MD	MD	_	5	aux	_	_
+4	be	_	VB	VB	_	5	auxpass	_	_
+5	taken	_	VBN	VBN	_	0	root	_	_
+6	out	_	IN	IN	_	5	compound:prt	_	_
+7	of	_	IN	IN	_	9	case	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	drier	_	NN	NN	_	5	nmod	_	_
+
+1	He	_	PRP	PRP	_	5	nsubj	_	_
+2	is	_	VBZ	VBZ	_	5	cop	_	_
+3	a	_	DT	DT	_	5	det	_	_
+4	moving	_	VBG	VBG	_	5	amod	_	_
+5	man	_	NN	NN	_	0	root	_	_
+                        </div>
+                        <div>
+                             The examples are visualized using <a href="https://github.com/spyysalo/annodoc">Annodoc</a> (annotation documentation support system), <a href="http://spyysalo.github.io/conllu.js/">conllu.js</a> (CoNLL-U format library for JavaScript) that use <a href="https://github.com/nlplab/brat">brat</a> (brat rapid annotation tool), .
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var root = ''; // filled in by jekyll
+        head.js(
+            // External libraries
+            root + 'dependencies/annodoc/lib/ext/jquery.min.js',
+            root + 'dependencies/annodoc/lib/ext/jquery.svg.min.js',
+            root + 'dependencies/annodoc/lib/ext/jquery.svgdom.min.js',
+            root + 'dependencies/annodoc/lib/ext/jquery-ui.min.js',
+            root + 'dependencies/annodoc/lib/ext/waypoints.min.js',
+            // brat helper modules
+            root + 'dependencies/annodoc/lib/brat/configuration.js',
+            root + 'dependencies/annodoc/lib/brat/util.js',
+            root + 'dependencies/annodoc/lib/brat/annotation_log.js',
+            root + 'dependencies/annodoc/lib/ext/webfont.js',
+            // brat modules
+            root + 'dependencies/annodoc/lib/brat/dispatcher.js',
+            root + 'dependencies/annodoc/lib/brat/url_monitor.js',
+            root + 'dependencies/annodoc/lib/brat/visualizer.js',
+            // annotation documentation support
+            'dependencies/annodoc/lib/local/annodoc.js',
+            root + 'dependencies/annodoc/lib/local/config.js',
+            // the conllu.js library itself
+            root + 'dependencies/conllu.js/conllu.js'
+        );
+        var webFontURLs = [
+            root + 'dependencies/annodoc/static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+            root + 'dependencies/annodoc/static/fonts/Liberation_Sans-Regular.ttf'
+        ];
+        /* not used here */
+        var documentCollections = {};
+        head.ready(function() {
+        // performes all embedding and support functions
+        Annodoc.activate(Config.bratCollData, documentCollections);
+        });
+    </script>
+</html>
