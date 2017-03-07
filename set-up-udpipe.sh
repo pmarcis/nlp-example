@@ -58,6 +58,9 @@ gunzip europarl-v7.en.gz
 
 cd ..
 
+#download NLTK data (will be necessary for the truecaser)
+python -m nltk.downloader -d ~/nltk_data all
+
 python train-truecaser.py -i dependencies/europarl-v8.lv -o models/truecasing-model.lv
 python train-truecaser.py -i dependencies/europarl-v7.en -o models/truecasing-model.en
 
