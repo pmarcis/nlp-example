@@ -38,7 +38,10 @@ cd ../bindings/python
 make PYTHON_INCLUDE=/usr/include/python2.7/
 #So that you accidentally do not mess up your system, I commented the following line out! But NOTE that you have to make the library visible to python!
 #sudo cp -r ufal* /usr/local/lib/python2.7/dist-packages/
-cd ../..
+#If you use Anaconda, you might need to specify here:
+#make PYTHON_INCLUDE=~/anaconda2/include/python2.7/
+#sudo cp -r ufal* ~/anaconda2/lib/python2.7/site-packages/
+cd ../../..
 #Alternatively you could try:
 #pip install ufal.udpipe
 #... but the versions were incompattible and the trained models failed to load last time I checked.
@@ -49,7 +52,7 @@ wget http://data.statmt.org/wmt17/translation-task/europarl-v8.lv.tgz
 tar zxf europarl-v8.lv.tgz
 rm europarl-v8.lv.tgz
 mv training-monolingual/europarl-v8.lv ./
-rmdir mv training-monolingual
+rmdir training-monolingual
 wget http://www.statmt.org/wmt14/training-monolingual-europarl-v7/europarl-v7.en.gz
 gunzip europarl-v7.en.gz
 
