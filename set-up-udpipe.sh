@@ -1,7 +1,6 @@
 #Install or upgrade NLTK and numpy
 pip install --upgrade nltk
 pip install --upgrade numpy
-pip install --upgrade cPickle
 
 mkdir -p dependencies
 mkdir -p models
