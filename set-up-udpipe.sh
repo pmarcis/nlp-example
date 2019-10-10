@@ -35,15 +35,15 @@ make
 #Then, we will need to set up python bindings. NOTE! YOU SHOULD SPECIFY HERE THE CORRECT PATH TO THE PYTHON INCLUDE FILES (Python.h)!
 cd ../bindings/python
 make PYTHON_INCLUDE=/usr/include/python2.7/
+
+pip install ufal.udpipe
+#Alternatively you could try:
 #So that you accidentally do not mess up your system, I commented the following line out! But NOTE that you have to make the library visible to python!
 #sudo cp -r ufal* /usr/local/lib/python2.7/dist-packages/
 #If you use Anaconda, you might need to specify here:
 #make PYTHON_INCLUDE=~/anaconda2/include/python2.7/
 #sudo cp -r ufal* ~/anaconda2/lib/python2.7/site-packages/
 cd ../../..
-#Alternatively you could try:
-#pip install ufal.udpipe
-#... but the versions were incompattible and the trained models failed to load last time I checked.
 
 ##We need to train a truecasing model as the UDPipe models seem to missclassify the first words in a sentence rather often due to capitalisation.
 git clone https://github.com/nreimers/truecaser.git
